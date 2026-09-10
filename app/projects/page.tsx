@@ -26,7 +26,7 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <p className="text-accent font-mono text-sm mb-2">{project.platform}</p>
+                <p className="text-accent font-mono text-sm mb-2">{project.platform} · {project.year}</p>
                 <h3 className="text-2xl font-bold text-primary mb-3">{project.title}</h3>
                 
                 <div className="flex flex-wrap gap-2 mb-6">

@@ -33,7 +33,7 @@ export default async function ProjectDetail({
         </Link>
 
         <div className="mb-12">
-          <p className="text-accent font-mono mb-4 tracking-wider">{project.platform}</p>
+          <p className="text-accent font-mono mb-4 tracking-wider">{project.platform} · {project.year}</p>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">{project.title}</h1>
           <div className="h-2 w-24 bg-accent mb-8"></div>
         </div>
@@ -74,6 +74,11 @@ export default async function ProjectDetail({
             <div className="bg-white p-6 border-2 border-gray-100 shadow-sm">
               <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">My Role</h3>
               <p className="text-primary font-medium text-lg">{project.role}</p>
+            </div>
+
+            <div className="bg-white p-6 border-2 border-gray-100 shadow-sm">
+              <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Year</h3>
+              <p className="text-primary font-medium text-lg">{project.year}</p>
             </div>
 
             <div className="bg-white p-6 border-2 border-gray-100 shadow-sm">
